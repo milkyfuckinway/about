@@ -1,1 +1,0 @@
-import{_ as s,o as c,c as t,a as e,b as o}from"./index-2964a160.js";const a={},r={class:"main"},i=e("div",{class:"container"},[e("h1",null,"MainScreen")],-1),l=[i];function d(n,_){return c(),t("section",r,l)}const m=s(a,[["render",d]]);const f={__name:"HomeView",setup(n){return(_,u)=>(c(),o(m))}};export{f as default};

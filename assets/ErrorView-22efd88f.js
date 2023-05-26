@@ -1,0 +1,1 @@
+import{_ as o,o as t,c as _,a as e}from"./index-d9b8df90.js";const s={},r={class:"container error-view"},c=e("h2",null,"404",-1),n=e("p",null,"Иди своей дорогой, сталкер",-1),a=[c,n];function i(l,d){return t(),_("div",r,a)}const f=o(s,[["render",i]]);export{f as default};
