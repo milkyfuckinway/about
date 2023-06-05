@@ -15,7 +15,7 @@ const props = defineProps({
 	<section class="intro">
 		<div
 			class="container"
-			data-aos="fade-up">
+			data-aos="fade-down">
 			<h2 class="intro__title">{{ props.title }}</h2>
 			<p class="intro__description">{{ props.paragraph }}</p>
 		</div>
