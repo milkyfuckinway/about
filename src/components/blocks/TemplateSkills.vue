@@ -18,12 +18,12 @@ const props = defineProps({
 				v-for="(item, object, itemIndex) in props.jsonObject"
 				:key="itemIndex"
 				class="skills__item"
-				data-aos="fade-down">
+				data-aos="fade-up">
 				<h3>{{ object }}</h3>
 				<p
 					v-for="(paragraph, paragraphIndex) in item"
 					:key="paragraphIndex"
-					data-aos="fade-down"
+					data-aos="fade-up"
 					class="skill__description"
 					:data-aos-delay="isMobile() ? (itemIndex * item.length + paragraphIndex) * 100 : 0"
 					:data-aos-duration="300">

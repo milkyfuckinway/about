@@ -4,7 +4,7 @@ import TemplateSection from '@blocks/TemplateSection.vue';
 
 <template>
 	<TemplateSection title="Навыки">
-		<p data-aos="fade-up">
+		<p>
 			В процессе обучения я обрёл уверенные навыки веб разработки и продолжаю совершенствовать свои знания в этой
 			области каждый день.
 		</p>
