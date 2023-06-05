@@ -1,0 +1,18 @@
+@include font-face('GTEesti', normal, 400, GTEesti-400);
+@include font-face('GTEesti', normal, 700, GTEesti-700);
+
+$ff-gteesti: 'GTEesti', 'Arial', sans-serif;
+
+// переменная используемая в html для подключения скейлинга
+$fz-default: 16px;
+
+html {
+	font-family: $ff-gteesti;
+	font-size: $fz-default;
+	font-style: normal;
+	font-weight: 400;
+	// оптимизация выравнивания шрифта относительно центра строки
+	text-rendering: optimizeLegibility;
+	// если по прежнему есть проблемы с выравниванием
+	// https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
+}

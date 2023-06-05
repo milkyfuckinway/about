@@ -1,0 +1,37 @@
+html,
+body,
+#app {
+	height: 100%;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: $color-default-white;
+}
+
+html {
+	color: $color-default-black;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
+}
+
+body {
+	@include scrollbar;
+}
+#app {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+main {
+	flex-grow: 1;
+	background-color: $plt-white;
+	color: $plt-dark;
+}
+
+header,
+footer {
+	flex-shrink: 0;
+}

@@ -1,0 +1,53 @@
+// Colors https://www.htmlcsscolor.com/hex/334482 // ---------------------------------
+
+$color-default-black: #000000;
+$color-default-white: #ffffff;
+$color-transparent: rgba(255, 255, 255, 0);
+$color-neon-blue: #2c39f2;
+$color-torch-red: #ed0233;
+
+// Palette
+$plt-dark: #146c94;
+$plt-medium: #19a7ce;
+$plt-light: #afd3e2;
+$plt-white: #f6f1f1;
+
+// Gradient // ---------------------------------
+
+$black-to-right: linear-gradient(
+	90deg,
+	rgba(0, 0, 0, 0.75) 0%,
+	rgba(0, 0, 0, 0) 75%
+);
+
+// Animation // ---------------------------------
+
+$tf-default: ease;
+$tf-linear: linear;
+$tf-bezier-no-stretch: cubic-bezier(0, 1, 0, 1);
+$tf-bezier-stretch-strong: cubic-bezier(0, 2, 1, 1);
+$tf-bezier-stretch-medium: cubic-bezier(0, 1.75, 1, 1);
+$tf-bezier-stretch-light: cubic-bezier(0, 1.45, 1, 1);
+$tf-bezier-stretch-light-easy-out: cubic-bezier(0.5, 0, 0.5, 1.5);
+$trans-default: 0.1s $tf-default;
+$trans-modal: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+$trans-no-stretch: 0.4s $tf-bezier-no-stretch;
+$trans-stretch-strong: 0.4s $tf-bezier-stretch-strong;
+$trans-stretch-medium: 0.4s $tf-bezier-stretch-medium;
+$trans-stretch-light: 0.4s $tf-bezier-stretch-light;
+$trans-stretch-light-easy-out: 0.4s $tf-bezier-stretch-light-easy-out;
+
+$trans-600: 0.6s $tf-default;
+
+// Viewports // ---------------------------------
+
+$vp-320: 320px;
+$vp-768: 768px;
+$vp-1024: 1024px;
+$vp-1440: 1440px;
+$vp-1920: 1920px;
+
+// Retina // ---------------------------------
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

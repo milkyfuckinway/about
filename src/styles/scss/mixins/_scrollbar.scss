@@ -1,0 +1,65 @@
+@mixin scrollbar(
+	$show-on-hover: false,
+	$track-color: $plt-white,
+	$thumb-color: $plt-dark,
+	$thumb-hover-color: $plt-medium,
+	$thumb-active-color: $plt-light,
+	$scrollbar-width: 16px,
+	$scrollbar-border-radius: 50px,
+	$scrollbar-border-coefficient: 5,
+	$hidden-corner: true,
+	$transition: 0.35s,
+) {
+	-webkit-overflow-scrolling: touch;
+	scrollbar-color: transparent transparent;
+
+	@if $hidden-corner {
+		&::-webkit-scrollbar-corner {
+			display: none;
+		}
+	}
+
+	&::-webkit-scrollbar {
+		width: $scrollbar-width;
+		background-color: $track-color;
+	}
+
+	&::-webkit-scrollbar-track,
+	&::-webkit-scrollbar-corner {
+		background-color: $track-color;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border: calc(#{$scrollbar-width} / #{$scrollbar-border-coefficient})
+			solid transparent;
+		border-radius: $scrollbar-border-radius;
+		background-color: $thumb-color;
+		background-clip: content-box;
+		transition: $transition;
+
+		@if $show-on-hover {
+			visibility: hidden;
+		}
+
+		&:hover {
+			background-color: $thumb-hover-color;
+		}
+
+		&:active {
+			background-color: $thumb-active-color;
+		}
+	}
+
+	&:hover,
+	&:focus {
+		scrollbar-color: $thumb-color transparent;
+
+		&::-webkit-scrollbar-thumb {
+			visibility: visible;
+		}
+	}
+
+	&::-webkit-scrollbar-button {
+		display: none;
+	}
+}

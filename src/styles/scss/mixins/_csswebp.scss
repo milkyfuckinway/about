@@ -1,0 +1,24 @@
+@mixin graphic-webp($filename, $background-color: #000000, $extname: "jpg") {
+  $jpg: url("./../assets/img/#{$filename}.#{$extname}");
+  $webp: url("./../assets/img/#{$filename}.webp");
+
+  @supports (background-image: $webp) {
+    background-color: $background-color;
+    background-image: $webp;
+  }
+
+  @supports not (background-image: $webp) {
+    background-color: $background-color;
+    background-image: $jpg;
+  }
+}
+
+// css ретина + вебп
+
+@mixin graphic-retina($filename, $background-color: #000000, $extname: "jpg") {
+  @include graphic-webp($filename, $background-color, $extname);
+
+  @include retina {
+    @include graphic-webp("#{$filename}@2x", $background-color, $extname);
+  }
+}

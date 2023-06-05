@@ -1,0 +1,6 @@
+.husky
+.cache
+dist
+node_modules
+public
+src/vendor

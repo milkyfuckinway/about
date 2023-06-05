@@ -1,0 +1,82 @@
+
+// Оутлайн
+
+@mixin default-outline($outline-color: $color-default-white, $outline-offset: 2px) {
+  outline: 2px solid $outline-color;
+  outline-offset: $outline-offset;
+}
+
+// Фокус
+
+@mixin default-focus($outline-color, $outline-offset) {
+  &:focus-visible {
+    @include default-outline($outline-color, $outline-offset);
+    @content;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      @content;
+    }
+  }
+}
+
+// Ховер
+
+@mixin default-states($outline-color: $color-default-white, $outline-offset: 2px) {
+  -webkit-tap-highlight-color: transparent;
+  transition: $tf-linear 0.2s opacity;
+
+  &:not(:disabled) {
+    @include hover-focus {
+      @include default-focus($outline-color, $outline-offset);
+    }
+
+    @include hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.2;
+  }
+}
+
+// Миксины из сборки
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover:not(.focus-visible) {
+      @content;
+    }
+  }
+}
+
+@mixin focus {
+  &.focus-visible:focus {
+    @content;
+  }
+}
+
+@mixin active {
+  &.focus-visible:active {
+    @content;
+  }
+}
+
+@mixin hover-focus {
+  @media (hover: hover) {
+    &:hover:not(.focus-visible) {
+      @content;
+    }
+  }
+
+  &.focus-visible:focus {
+    @content;
+  }
+}

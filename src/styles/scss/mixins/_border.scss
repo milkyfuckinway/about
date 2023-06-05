@@ -1,0 +1,16 @@
+$col-1: rgb(0 0 0 / 50%);
+$col-2: rgb(255 255 255 / 50%);
+
+@mixin old-border($size: 2) {
+  border-bottom: #{$size}px inset $col-1;
+  border-left: #{$size}px inset $col-1;
+  border-right: #{$size}px inset $col-2;
+  border-top: #{$size}px inset $col-2;
+}
+
+@mixin old-border--active($size: 2) {
+  border-bottom: #{$size}px inset $col-2;
+  border-left: #{$size}px inset $col-2;
+  border-right: #{$size}px inset $col-1;
+  border-top: #{$size}px inset $col-1;
+}
