@@ -1,0 +1,1 @@
+import{o as s,d as n,a as t,t as l,f as r}from"./index-c7b7c82f.js";const c={class:"container","data-aos":"fade-down"},d={__name:"TemplateSection",props:{title:{type:String,default:()=>"Title"}},setup(e){const a=e;return(o,i)=>(s(),n("section",null,[t("div",c,[t("h2",null,l(a.title),1),r(o.$slots,"default")])]))}};export{d as _};
