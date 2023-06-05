@@ -1,1 +1,0 @@
-import{o,d as n,a as t,t as l,f as r}from"./index-bad638a6.js";const c={class:"container","data-aos":"fade-up"},d={__name:"TemplateSection",props:{title:{type:String,default:()=>"Title"}},setup(e){const a=e;return(s,i)=>(o(),n("section",null,[t("div",c,[t("h2",null,l(a.title),1),r(s.$slots,"default")])]))}};export{d as _};
