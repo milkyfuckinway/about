@@ -1,0 +1,1 @@
+import{_ as e,o,d as t,a as r}from"./index-52347cec.js";const s={},_={class:"container error-view"},c=r("h2",null,"404",-1),n=[c];function a(i,d){return o(),t("section",_,n)}const f=e(s,[["render",a]]);export{f as default};
