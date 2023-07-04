@@ -23,3 +23,8 @@ onMounted(() => {
 		<router-view></router-view>
 	</PageLayout>
 </template>
+
+
+<style lang="scss">
+@import '@scss/global.scss';
+</style>

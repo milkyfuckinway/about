@@ -7,12 +7,14 @@ $ff-gteesti: 'GTEesti', 'Arial', sans-serif;
 $fz-default: 16px;
 
 html {
-	font-family: $ff-gteesti;
-	font-size: $fz-default;
-	font-style: normal;
 	font-weight: 400;
+	font-style: normal;
+	font-size: $fz-default;
+	font-family: $ff-gteesti;
+
 	// оптимизация выравнивания шрифта относительно центра строки
-	text-rendering: optimizeLegibility;
+	text-rendering: optimizelegibility;
+
 	// если по прежнему есть проблемы с выравниванием
 	// https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
 }

@@ -1,15 +1,15 @@
 @mixin visually-hidden {
-    border: 0;
+    position: absolute;
+    overflow: hidden;
     clip: rect(0 0 0 0);
-    clip-path: inset(100%);
+    width: 1px;
     height: 1px;
     margin: -1px;
-    overflow: hidden;
     padding: 0;
-    pointer-events: none;
-    position: absolute;
-    -webkit-touch-callout: none;
-    user-select: none;
+    border: 0;
     white-space: nowrap;
-    width: 1px;
+    pointer-events: none;
+    user-select: none;
+    clip-path: inset(100%);
+    -webkit-touch-callout: none;
 }

@@ -9,23 +9,28 @@
 // Фокус
 
 @mixin default-focus($outline-color, $outline-offset) {
-  &:focus-visible {
-    @include default-outline($outline-color, $outline-offset);
-    @content;
-  }
-
   @supports not selector(:focus-visible) {
     &:focus {
       @content;
     }
+  }
+
+  &:focus-visible {
+    @include default-outline($outline-color, $outline-offset);
+    @content;
   }
 }
 
 // Ховер
 
 @mixin default-states($outline-color: $color-default-white, $outline-offset: 2px) {
-  -webkit-tap-highlight-color: transparent;
   transition: $tf-linear 0.2s opacity;
+  -webkit-tap-highlight-color: transparent;
+
+  &:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+  }
 
   &:not(:disabled) {
     @include hover-focus {
@@ -41,10 +46,6 @@
     }
   }
 
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.2;
-  }
 }
 
 // Миксины из сборки

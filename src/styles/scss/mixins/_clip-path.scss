@@ -1,7 +1,7 @@
-@mixin clipOn($value) {
+@mixin clip-on($value) {
   clip-path: polygon(0% 0%, 0% 100%, $value 100%, $value $value, calc(100% - $value) $value, calc(100% - $value) calc(100% - $value), $value calc(100% - $value), $value 100%, 100% 100%, 100% 0%);
 }
 
-@mixin clipOff($value) {
+@mixin clip-off($value) {
   clip-path: polygon(0% 0%, 0% 100%, $value 100%, $value $value, $value $value, $value calc(100% - $value), $value calc(100% - $value), $value 100%, 100% 100%, 100% 0%);
 }

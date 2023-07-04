@@ -9,7 +9,6 @@ import MainHeader from '@blocks/MainHeader.vue'
 	</main>
 </template>
 
-<style lang="scss"></style>
 
 <!-- import MainFooter from '@blocks/MainFooter.vue' -->
 <!-- <MainFooter v-if="$route.name !== 'error'" class="footer"> </MainFooter> -->

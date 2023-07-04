@@ -9,5 +9,3 @@ import TemplateSection from '@blocks/TemplateSection.vue';
 		</p>
 	</TemplateSection>
 </template>
-
-<style lang="scss"></style>
